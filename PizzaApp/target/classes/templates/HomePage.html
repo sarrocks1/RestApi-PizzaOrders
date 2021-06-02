@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<meta charset="ISO-8859-1">
+
+<title>Restful APIs</title>
+
+</head>
+<body>
+	<center><h2>Pizza Order APIs</h2></center>
+<br>
+<br>
+	<div>
+		<h3><i>API Description :</i></h3>
+		<br>
+		<table style="width:100%">
+			<tr >
+				<th>Method Type</th>
+				<th>Method Description</th>
+				<th>End Point</th>
+				<th>Method Body</th>
+			</tr>
+			<br>
+			<tr >
+				<td>POST</td>
+				<td>Add New Orders</td>
+				<td>/Orders</td>
+				<td>{<br>
+					"orderItems":"Pizza , Burger , Pasta",<br>
+    				"orderAddress":"Pune",<br>
+    				"orderCoupon":"New100"<br>
+					}</td>
+			</tr>
+		
+			<tr>
+				<td>GET</td>
+				<td>Get All Orders</td>
+				<td>/Orders</td>
+				<td>NONE</td>
+			</tr>
+			<tr>
+				<td>GET</td>
+				<td>Get Order By ID</td>
+				<td>/Orders/{id}</td>
+				<td>NONE</td>
+			</tr>
+			<tr>
+				<td>DELETE</td>
+				<td>Delete Order By ID</td>
+				<td>/Orders/{id}</td>
+				<td>NONE</td>
+			</tr>
+			<tr>
+				<td>PUT</td>
+				<td>Update Order By ID</td>
+				<td>/Orders/{id}</td>
+				<td>{<br>
+					"orderItems":"Pizza , Fries",<br>
+    				"orderAddress":"Delhi",<br>
+    				"orderCoupon":"Get50"<br>
+					}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
