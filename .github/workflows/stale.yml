@@ -3,6 +3,8 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/actions/stale
+
+# STALE BOT has been disabled for this repository
 name: Mark stale issues and pull requests
 
 on:
